@@ -23,6 +23,7 @@ def add_contact(contact_book):
             "address": address
             }
         print("Contact added successfully!")
+
 # Create a function called view contact
 def view_contact(contact_dict):
     contact_name = input("Enter contact name: ")
