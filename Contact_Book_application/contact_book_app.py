@@ -22,3 +22,17 @@ def add_contact(contact_book):
             "address": address
             }
         print("Contact added successfully!")
+# Create a function called view contact
+def view_contact(contact_dict):
+    contact_name = input()
+    if contact_name not in contact_dict:
+        print("Contact not found!")
+    else:
+        name = contact_name
+        phone = contact_dict[contact_name]["phone"]
+        email = contact_dict[contact_name]["email"]
+        address = contact_dict[contact_name]["address"]
+        print("Name:", name)
+        print("Phone:", phone)
+        print("Email:", email)
+        print("Address:", address)
