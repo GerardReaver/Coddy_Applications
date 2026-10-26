@@ -38,6 +38,7 @@ def view_contact(contact_dict):
         print("Phone:", phone)
         print("Email:", email)
         print("Address:", address)
+
 # Create a function to edit contacts
 def edit_contact(contact_book):
     edit_name = input("Enter the name you would like to edit: ")
