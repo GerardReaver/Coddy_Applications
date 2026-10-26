@@ -9,13 +9,13 @@ def display_menu():
     print("6. Exit")
 # Create a function to add a contact
 def add_contact(contact_book):
-    name = input()
+    name = input("Enter contact name: ")
     if name in contact_book:
         print("Contact already exists!")
     else:
-        phone = input()
-        email = input()
-        address = input()
+        phone = input("Enter contact number: ")
+        email = input("Enter contact email: ")
+        address = input("Enter contact address: ")
         contact_book[name] = {
             "phone": phone,
             "email": email, 
@@ -24,7 +24,7 @@ def add_contact(contact_book):
         print("Contact added successfully!")
 # Create a function called view contact
 def view_contact(contact_dict):
-    contact_name = input()
+    contact_name = input("Enter contact name: ")
     if contact_name not in contact_dict:
         print("Contact not found!")
     else:
@@ -36,3 +36,45 @@ def view_contact(contact_dict):
         print("Phone:", phone)
         print("Email:", email)
         print("Address:", address)
+# Create a function to edit contacts
+def edit_contact(contact_book):
+    edit_name = input("Enter the name you would like to edit: ")
+    if edit_name in contact_book:
+        new_phone = input("Enter the new number: ")
+        if new_phone == "":
+            new_phone = contact_book[edit_name]["phone"]
+        new_email = input("Enter the new email: ")
+        if new_email == "":
+            new_email = contact_book[edit_name]["email"]
+        new_address = input("Enter the new address: ")
+        if new_address == "":
+            new_address = contact_book[edit_name]["address"]
+        contact_book[edit_name] = {
+            "phone": new_phone,
+            "email": new_email,
+            "address": new_address
+        }
+        print("Contact updated successfully!")
+    else:
+        print("Contact not found!")
+
+# Create a function to delete a contact
+def delete_contact(contact_book):
+    delete_name = input()
+    if delete_name in contact_book:
+        contact_book.pop(delete_name)
+        print("Contact deleted successfully!")
+    else:
+        print("Contact not found!")
+
+# Create a function to list all the contacts
+def list_all_contacts(contact_book):
+    if contact_book == {}:
+        print("No contacts available.")
+    else:
+        for keys, values in contact_book.items():
+            print(f"Name: {keys}")
+            print(f"Phone: {values}")
+            
+
+
