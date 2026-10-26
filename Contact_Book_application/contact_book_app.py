@@ -74,7 +74,9 @@ def list_all_contacts(contact_book):
     else:
         for keys, values in contact_book.items():
             print(f"Name: {keys}")
-            print(f"Phone: {values}")
-            
+            print(f"Phone: {values['phone']}")
+            print(f"Email: {values['email']}")
+            print(f"Address: {values['address']}")
+            print("")
 
 
