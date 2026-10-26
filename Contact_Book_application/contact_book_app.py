@@ -7,6 +7,7 @@ def display_menu():
     print("4. Delete Contact")
     print("5. List All Contacts")
     print("6. Exit")
+    
 # Create a function to add a contact
 def add_contact(contact_book):
     name = input("Enter contact name: ")
