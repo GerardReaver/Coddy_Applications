@@ -87,7 +87,7 @@ def contact_book_app():
     contact_book = {}
     while True:
         display_menu()
-        user_input = input()
+        user_input = input("Type in a number choice: ")
         if user_input == "1":
             add_contact(contact_book)
         elif user_input == "2":
