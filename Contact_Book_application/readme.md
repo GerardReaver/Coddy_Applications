@@ -10,14 +10,17 @@
       
       - def function_name():, variables, input(), if-else conditionals, print("Strings"), dictionaries = {}, dicionary[referencing] = {} 
    .
-## 3. View contact = A function which takes one argument (a dictionary) and you then have the user input a name and the function checks if the name is in the dictionary.
+## 3. View Contact = A function which takes one argument (a dictionary) and you then have the user input a name and the function checks if the name is in the dictionary.
    if the name is not then it prints out a statement saying Contact was not found otherwise it returns you all the contacts information in a tabular format.
 
       - def function_name():, variables, input(), if-else conditionals, print("Strings"), dicionary[reference1]["reference2"]
    .
-## 4. Edit Contact = A function which takes one parameter (a dictionary) and you then take an input from the user which will access if-else conditionals to edit said contact
+## 4. Edit Contact = A function which takes one parameter (a dictionary) and you then take an input from the user, which will access if-else conditionals to edit said contact
    if it is applicable. 
 
       - def function_name():, variables, input(), if-else conditionals, if variable == "":(blank input for variables), dictionary[reference1]["reference2"], print("Strings")
    .
-## 5. Delete Contact = 
+## 5. Delete Contact = A function which takes one parameter (a dictionary) and you then take an input from the user, which will start a if-else conditional to delete a contact if found. 
+      - def function_name():, variables, input(), if-else conditionals, dictionary_name.pop(variable_referenced_in_dictionary), print("Strings")
+   .
+## 6. List All Contacts = 
