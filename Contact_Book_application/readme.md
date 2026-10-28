@@ -23,4 +23,7 @@
 ## 5. Delete Contact = A function which takes one parameter (a dictionary) and you then take an input from the user, which will start a if-else conditional to delete a contact if found. 
       - def function_name():, variables, input(), if-else conditionals, dictionary_name.pop(variable_referenced_in_dictionary), print("Strings")
    .
-## 6. List All Contacts = 
+## 6. List All Contacts = A function that takes one argument (a dictionary) and you then either retrieved all previous information or retrieved nothing. 
+      - def function_name():, if-else conditionals, dictionaries = {}, print("Strins")
+   .
+## 7. Contact Book Application = 
