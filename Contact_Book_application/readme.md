@@ -26,4 +26,8 @@
 ## 6. List All Contacts = A function that takes one argument (a dictionary) and you then either retrieved all previous information or retrieved nothing. 
       - def function_name():, if-else conditionals, dictionaries = {}, print("Strins")
    .
-## 7. Contact Book Application = 
+## 7. Contact Book Application = A function that takes no parameters. The function simply runs a loop over all the other functions so it can all work together finally as a fully built application.
+      - def function_name():, dictionary = {}, while loop, call_functions(), variables, input(), if-else conditionals, print("Strings"), 
+   .
+## 8. Lastly call the function so you can run the program. give it a try and send a commit if you think it needs anything. 
+      - print("Happy Coding!") 
