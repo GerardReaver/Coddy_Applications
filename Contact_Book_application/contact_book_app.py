@@ -63,7 +63,7 @@ def edit_contact(contact_book):
 
 # Create a function to delete a contact
 def delete_contact(contact_book):
-    delete_name = input()
+    delete_name = input("Type name to delete: ")
     if delete_name in contact_book:
         contact_book.pop(delete_name)
         print("Contact deleted successfully!")
