@@ -13,4 +13,6 @@
 ## 3. View contact = A function which takes one argument (a dictionary) and you then have the user input a name and the function checks if the name is in the dictionary.
    if the name is not then it prints out a statement saying Contact was not found otherwise it returns you all the contacts information in a tabular format.
 
-      - def function_name():, 
+      - def function_name():, variables, input(), if-else conditionals, print("Strings"), dicionary[reference1]["reference2"]
+   .
+## 4. 
