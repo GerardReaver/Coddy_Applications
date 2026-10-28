@@ -82,4 +82,25 @@ def list_all_contacts(contact_book):
             print(f"Address: {values['address']}")
             print("")
 
-
+# Creating the final function to put it all together
+def contact_book_app():
+    contact_book = {}
+    while True:
+        display_menu()
+        user_input = input()
+        if user_input == "1":
+            add_contact(contact_book)
+        elif user_input == "2":
+            view_contact(contact_book)
+        elif user_input == "3":
+            edit_contact(contact_book)
+        elif user_input == "4":
+            delete_contact(contact_book)
+        elif user_input == "5":
+            list_all_contacts(contact_book)
+        elif user_input == "6":
+            break 
+        else:
+            print("Invalid choice. Please try again.")
+# Actually call the function. Happy Coding!
+contact_book_app()
