@@ -1,5 +1,5 @@
 # Contact Book Application
-## 1. Display menu = A function for the user to interact with every time they open the application on the user interface.
+## 1. Display menu = ##  A function for the user to interact with every time they open the application on the user interface.
    The code simply prints all the things that need to be displyaed
       ### - def function_name():, print("Strings")  
 ## 2. Add Contact = A function that takes one argument which is a dictionary. The program needs to read an input from the user which is the name of the contact
