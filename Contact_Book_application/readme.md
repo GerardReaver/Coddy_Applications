@@ -15,4 +15,9 @@
 
       - def function_name():, variables, input(), if-else conditionals, print("Strings"), dicionary[reference1]["reference2"]
    .
-## 4. 
+## 4. Edit Contact = A function which takes one parameter (a dictionary) and you then take an input from the user which will access if-else conditionals to edit said contact
+   if it is applicable. 
+
+      - def function_name():, variables, input(), if-else conditionals, if variable == "":(blank input for variables), dictionary[reference1]["reference2"], print("Strings")
+   .
+## 5. Delete Contact = 
