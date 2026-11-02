@@ -7,3 +7,5 @@ list of the applications will be located below.
         
 ## 1. Contact Book Application 
         Example of how a real world contact book works in your phone through python object oriented coding. 
+## 2. Student Record Manager 
+        Example of how a real database for a University or School would use programming to create and manage the information for the school. 
