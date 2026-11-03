@@ -50,16 +50,20 @@ def calculate_average_grade(name):
             result3 = result2 / result1
             return result3  
 
+# This function will list the students by course
+def list_students_by_course(course):
+    student_name_list = []
+    for names_of_students in student_records:
+        if "courses" in student_records[names_of_students]:
+            if course in student_records[names_of_students]["courses"]:
+                student_name_list.append(names_of_students)
+    return student_name_list    
 
 # This is the example and test dataset.
 add_student("Alice", 20, ["Math", "Physics"])
-add_student("Bob", 22, ["Biology", "Chemistry"])
-
-add_grade("Alice", 90)
-add_grade("Alice", 85)
-add_grade("Bob", 75)
-
-print(calculate_average_grade("Alice"))  # Should return 87.5
-print(calculate_average_grade("Bob"))  # Should return 75.0
-print(calculate_average_grade("Charlie"))  # Non-existent student, should print message and return None
-print(calculate_average_grade("Alice"))  # Should return 87.5 again
+add_student("Bob", 22, ["Math", "Biology"])
+add_student("Diana", 23, ["Chemistry", "Physics"])
+print(list_students_by_course("Math"))  # Should return ["Alice", "Bob"]
+print(list_students_by_course("Physics"))  # Should return ["Alice", "Diana"]
+print(list_students_by_course("Biology"))  # Should return ["Bob"]
+print(list_students_by_course("History"))  # Should return an empty list
