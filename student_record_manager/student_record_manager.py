@@ -57,14 +57,26 @@ def list_students_by_course(course):
         if "courses" in student_records[names_of_students]:
             if course in student_records[names_of_students]["courses"]:
                 student_name_list.append(names_of_students)
-    return student_name_list    
+    return student_name_list   
+
+# This function filters throught the top students. 
+def filter_top_students(threshold):
+    top_students_list = []
+    for top_students in student_records:
+        if calculate_average_grade(top_students) >= threshold:
+            top_students_list.append(top_students)
+    return top_students_list
 
 # This is the example and test dataset.
 add_student("Alice", 20, ["Math", "Physics"])
 add_student("Bob", 22, ["Math", "Biology"])
 add_student("Diana", 23, ["Chemistry", "Physics"])
 
-print(list_students_by_course("Math"))  # Should return ["Alice", "Bob"]
-print(list_students_by_course("Physics"))  # Should return ["Alice", "Diana"]
-print(list_students_by_course("Biology"))  # Should return ["Bob"]
-print(list_students_by_course("History"))  # Should return an empty list
+add_grade("Alice", 90)
+add_grade("Alice", 85)
+add_grade("Bob", 75)
+add_grade("Diana", 95)
+
+print(filter_top_students(80))  # Should return ["Alice", "Diana"]
+print(filter_top_students(90))  # Should return ["Diana"]
+print(filter_top_students(100))  # Should return an empty list
